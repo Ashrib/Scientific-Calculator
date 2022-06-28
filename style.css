@@ -1,0 +1,120 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: #2724244d;
+}
+#cal-body{
+    height: calc(90vh);
+    width: calc(25vw);
+    border: 1px solid rgb(253, 253, 253);
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 10px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.75);
+}
+#cal-h{
+    font-size: 1.5em;
+    color: aliceblue;
+    margin-left: 5%;
+    font-style: italic;
+}
+#screen{
+    height: 15%;
+    width: 96%;
+    margin: auto;
+    margin-top: 1%;
+    background-color: rgba(40, 174, 236, 0.233);
+    border: 3px solid rgb(255, 255, 255);
+}
+#input{
+    height: 60%;
+    text-align: right;
+    color: rgb(201, 201, 201);
+    font-size: 1.5em;
+    overflow-x: scroll;
+}
+#input::-webkit-scrollbar{
+    background-color: transparent;
+    height: 5px;
+}
+#input::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 30px;
+}
+#result{
+    height: 40%;
+    text-align: right;
+    color: rgb(201, 201, 201);
+    font-size: 1.2em;
+}
+#all-buttons{
+    height: 75%;
+    width: 98%;
+    margin: auto;
+    margin-top: 1%;
+    padding-top: 5px;
+}
+
+#sci-buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    width: 100%;
+    height: 28%;
+    background-color: transparent;
+    align-items: center;
+}
+#sci-buttons button{
+    cursor: pointer;
+    border-radius: 10px 10px 40% 40%;
+    height: 30px;
+    background-color: rgb(187, 187, 187);
+}
+#n-buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    width: 100%;
+    height: 70%;
+    background-color: transparent;
+    align-items: center;
+    margin-top: 2%;
+}
+#n-buttons button{
+    height: 50px;
+    font-size: 1.8em;
+    border-radius: 10px;
+    cursor: pointer;
+    border-radius: 10px 10px 30% 30%;
+    background-color: rgb(255, 255, 255);
+}
+#n-buttons button:hover{
+    background-color: rgba(255, 255, 255, 0.534);
+}
+.minus{
+    grid-row: span 2;
+    height: 110px !important;
+}
+.equal-sign{
+    grid-column:1 / span 2;
+    border-radius: 10px !important;
+}
+.del{
+    background-color: rgb(255, 102, 0) !important;
+}
+.del:hover{
+    background-color: rgba(255, 102, 0, 0.534) !important;
+}
+.clear{
+    color: red;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+
+/* @media only screen and (max-width: 600px) {
+    .del{
+      background-color: rgb(0, 112, 150);
+    }
+} */
